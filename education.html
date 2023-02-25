@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svs</title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="hdr.css">
+    <link rel="stylesheet" href="y.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nnav.css">
+    <style>
+        @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+html{
+	background-color: #eaf0f2;
+}
+
+body{
+	font:16px/1.6 Arial,  sans-serif;
+}
+
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:190px;
+}
+
+header h1{
+	font: normal 32px/1.5 'Open Sans', sans-serif;
+	color: #3F71AE;
+	padding-bottom: 16px;
+}
+
+header h2{
+	color: #F05283;
+}
+
+header span{
+	color: #3F71EA;
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.fp{
+  height: 20px;
+  width: 20px;
+}
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.aabout{
+  color: #000000;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #1cf615;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+@import "compass/css3";
+
+
+
+.static-img {
+  display: block; 
+}
+
+iframe {
+   max-width: 100%; 
+}
+.map-container {
+  width: 100%;
+  margin: auto;
+  height: 0;
+  padding-top: 38%;
+  position: relative;
+  display: none; /* Hide for small screens */
+ 
+}
+
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="top_nav">
+      <div class="cnt_links">
+          <i class="fa fa-phone" class="call_icon"></i>
+          <p class="num">9812071109</p>
+           <i class="fa fa-envelope"></i>
+          <p class="num">singhvaisikindra@gmail.com</p>
+      </div>
+      <div class="check_links">
+          <p class="NEWS">NEWS&EVENT</p>
+      <p class="RESULT"><A href="http://localhost/StudentResult/index.php" >RESULT</A></p>
+      <p class="parent"><A href="AD.HTML" >ADMISSION</A></p>
+      </div>
+  </div>
+      <!--लोगो आ हेडिङ सब के कोडिङ -->
+  <div class="header">
+      <div class="logo_box">
+          <div   ><img id="log" src="R.png"></div>
+      </div>
+      <div class="name_box">
+          <div class="name"><h3 id="nname">श्री राष्ट्रिय माध्यमिक बिद्यालय पशुपतिनाथ बनरझुल्ला </h3> <br> बर्दिबास नगरपालिका :- ९ ,महोत्तरी</div>
+      </div>
+      <div class="watch_box">
+        <div class="clck"><i class="fa fa-clock-o" id="clock"></i></div>
+          
+          <p class="clock">Sun-Fri 09:00 - 04:00<br> Saturday Closed</p>
+      </div>
+  </div>
+  
+     
+   <!--लिस्ट  सब के कोडिङ -->
+   <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars" id="i"></i></label>
+      <div class="content">
+   
+        <ul class="links">
+          <li><a href="project.html">Home</a></li>
+          
+          <li>
+            <a href="#" class="desktop-link">About</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">About</label>
+            <ul>
+              <li><a href="scl.HTML">our School</a></li>
+            
+              <li><a href="chair.html">meaasage from principal</a></li>
+              <li><a href="chairman.html">meaasage from Chairman 3</a></li>
+              <li><a href="teacher.html">Our Teacher Tim</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Program</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Program</label>
+            <ul>
+              <li>
+                <a href="pre-deploma.html" class="desktop-link">Pre-diploma (18 months)</a>
+                
+              </li>
+              <li>
+                <a href="#" class="desktop-link">+2(xi & xii)</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">+2(xi & xii)</label>
+                <ul>
+                  <li><a href="commerce.html">Management</a></li>
+                  <li><a href="education.html">Education</a></li>
+             
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+  
+          <li><a href="cont.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-user-alt"></i></label>
+     
+    </nav>
+  </div>
+  
+    <!-- home section starts -->
+    <section class="home" id="home">
+<h1>you are in Education sector</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, consequuntur!</p>
+      <a href="#" class="btn">Wel~Come</a>
+    </section>
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+      <div class="box-container">
+        <div class="box">
+          <h1 class="heading">about us</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+            iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
+            debitis! Recusandae commodi numquam, vero eveniet inventore quas.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus pariatur, facere,
+            iusto maxime, reiciendis aspernatur illo neque ex atque dicta provident accusantium
+            debitis! Recusandae commodi numquam, vero eveniet inventore quas.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="walpaper.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+      <h1 class="heading">our Features</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="lg.png" alt="" />
+          <h3>branding</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique harum enim nemo
+            sit dolore magnam error quisquam ullam fugiat!
+          </p>
+        </div>
+        <div class="box">
+          <img src="lg.png" alt="" />
+          <h3>design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique harum enim nemo
+            sit dolore magnam error quisquam ullam fugiat!
+          </p>
+        </div>
+        <div class="box">
+          <img src="lg.png" alt="" />
+          <h3>development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique harum enim nemo
+            sit dolore magnam error quisquam ullam fugiat!
+          </p>
+        </div>
+        <div class="box">
+          <img src="lg.png" alt="" />
+          <h3>photography</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique harum enim nemo
+            sit dolore magnam error quisquam ullam fugiat!
+          </p>
+        </div>
+        <div class="box">
+          <img src="lg.png" alt="" />
+          <h3>support</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique harum enim nemo
+            sit dolore magnam error quisquam ullam fugiat!
+          </p>
+        </div>
+        <div class="box">
+          <img src="lg.png" alt="" />
+          <h3>marketing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut similique harum enim nemo
+            sit dolore magnam error quisquam ullam fugiat!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- works section starts -->
+    <section class="works" id="works">
+      <h1 class="heading">our Gallery</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="a.jpg" alt="" />
+            <div class="content">
+              <h3>project 01</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="walpaper.png" alt="" />
+            <div class="content">
+              <h3>project 02</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="a.jpg" alt="" />
+            <div class="content">
+              <h3>project 03</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="walpaper.png" alt="" />
+            <div class="content">
+              <h3>project 04</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="a.jpg" alt="" />
+            <div class="content">
+              <h3>project 05</h3>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="walpaper.png" alt="" />
+            <div class="content">
+              <h3>project 06</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- works section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h1 class="heading">contact us</h1>
+      <div class="box-container">
+        <div class="box">
+          <h3>address</h3>
+          <p>bardibas, madhesh provience </p>
+          <h3>email</h3>
+          <p>singhvaisikindra@gmail.com</p>
+          <h3>phone 1</h3>
+          <p>+977 9812071109</p>
+          <h3>phone 2</h3>
+          <p>+977 9807651029</p>
+        </div>
+
+        <form>
+          <div class="inputBox">
+            <input type="text" placeholder="your name" />
+            <input type="text" placeholder="your number" />
+          </div>
+          <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+  <!-- code for fotter-->
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+      <h3 class="aabout">About<span>बनरझुल्ला</span></h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">History</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">© 2019 श्रि राष्ट्रिय माध्यमिक बिद्यालय पशुपतिनाग‍थ बनरझुल्ला <br> Sikindra singh <br> Suvash shah  <br> Binita  singh <br> ranjana singh  <br> Biond singh</p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>  Madhesh Provience,
+               Mahottari</span>
+              Bardibas Municipality -9, Pashupatinagar - 2</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+977 9812071109</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">singhvaisikindra@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About My School</span>
+          We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+      <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+  </div>
+</footer>
+
+<div id="pattern" class="pattern">
+  <div class="map">
+  </div>
+</div>
+
+    <!-- ionicons cdn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- local js file -->
+    <script src="script.js"></script>
+  </body>
+</html>

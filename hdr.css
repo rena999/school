@@ -1,0 +1,789 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.top_nav{
+  
+    color: aliceblue;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(238, 57, 7);
+    display: flex;
+    padding-top: 1px;
+}
+
+.cnt_links{
+    display: flex;
+    width: 50%;
+}
+
+.fa-phone{
+    margin: 0.8% 0% auto 20%;
+    height: 100%;
+   
+    color: antiquewhite;
+}
+
+.fa-envelope{
+    margin: 0.8% 0% auto 10%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+.check_links{
+ 
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.num{
+    margin: auto 2% auto 1%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+
+/* click links ko lagi codding   */ 
+.check_links{
+    text-align: right;
+    }
+    
+    .NEWS{
+        margin-left: 15vw;
+       text-align: right;
+        width: 15%;
+        color: rgb(238, 57, 7);
+        display: hidden;
+        cursor: progress;
+       
+    }
+    
+    
+    
+    .RESULT{
+        margin-left: 5%;
+        margin-right: 3%;
+        width: 15%;
+
+       
+    }
+    
+    .parent{
+        margin:  auto 1%;
+        width: 15%;
+        color: blue;
+       background-color: yellow;
+       text-align: center;
+       overflow: hidden;
+    }
+    
+.clck{
+    justify-content: center;
+    justify-items: center;
+   margin: 13% 1% 0% 0% ;
+    height: 1%;
+   
+}
+@media screen and (max-width: 1000px){
+    .top_nav{
+        
+        color: aliceblue;
+        width: 100%;
+        background-color: rgb(238, 57, 7);
+        display: flex;
+    }
+
+    .cnt_links{
+        display: flex;
+        width: 50%;
+    }
+
+   
+.fa-phone{
+    margin: 0.8% 2% auto 15%;
+    height: 100%;
+   
+    color: antiquewhite;
+}
+
+.fa-envelope{
+    margin: 0.8% 2% auto 8%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+.check_links{
+ 
+    width: 45%;
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.num{
+    margin: auto 2% auto 1%;
+    height: 100%;
+    color: antiquewhite;
+}
+ /* click links ko lagi codding   */ 
+.check_links{
+    text-align: right;
+    }
+    
+    .NEWS{
+        margin-left: 10vw;
+       text-align: right;
+        width: 10%;
+        padding-right: 13%;
+        font-size: 80%;
+       
+    }
+    
+    
+    
+    .RESULT{
+        margin-left: 5%;
+        margin-right: 3%;
+        width: 15%;
+        font-size: 80%;
+       
+    }
+    
+    .parent{
+        margin:  auto 2%;
+        width: 15%;
+        font-size: 80%;
+        color: blue;
+       background-color: yellow;
+       text-align: center;
+    }
+
+    /* heading responisve*/
+    .logo_box{
+
+        width: 80%;
+        height: 30%;
+      
+    }
+    
+    #log{
+        margin-left: 13%;
+      
+       
+        
+    }
+    
+    .name_box{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+     font-size: 80%;
+        margin: auto 0%;
+        line-height: none;
+        width: 50%;
+        padding-left: 2%;
+    }
+
+
+    
+    .watch_box{
+        display: flex;
+        width: 30%;
+    
+    
+    }
+    
+    .fa-clock-o{
+     
+        color: rgba(255, 204, 0, 0.782);
+        margin: 10% 1% 10% 10% ;
+        position: center center;
+        
+    }
+    
+    .clock{
+        font-size: 60%;
+        margin-left: 8%;
+        width: 80%;
+        height: auto;
+       margin: 10% 10% 10% 0% ;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 760px){
+    .top_nav{
+      
+        color: aliceblue;
+        width: 100%;
+        background-color: rgb(238, 57, 7);
+        display: flex;
+
+    }
+
+    .cnt_links{
+        display: flex;
+        width: 30%;
+    }
+
+   
+.fa-phone{
+    margin: 0.8% 2% auto 10%;
+    height: 100%;
+   
+    color: antiquewhite;
+}
+
+.fa-envelope{
+    margin: 0.8% 2% auto 5%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+.check_links{
+ 
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.num{
+    
+    margin: auto 2% auto 1%;
+    height: 100%;
+    display: none;
+    color: antiquewhite;
+}
+ /* click links ko lagi codding   */ 
+.check_links{
+    text-align: right;
+    }
+    
+    .NEWS{
+        margin-left: 10vw;
+       text-align: right;
+        width: 10%;
+        padding-right: 13%;
+        font-size: 60%;
+        
+       
+    }
+    
+    
+    
+    .RESULT{
+        margin-left: 5%;
+        margin-right: 3%;
+        width: 15%;
+        font-size: 60%;
+       
+    }
+    
+    .parent{
+        margin:  auto 2%;
+        width: 15%;
+        color: blue;
+       background-color: yellow;
+       text-align: center;
+       font-size: 60%;
+    }
+    
+
+     /* heading responisve*/
+     .logo_box{
+
+        width: 6%;
+        height: 12%;
+      
+    }
+    
+    #log{
+        margin-left: 6%;
+        width: 63%;
+        height: auto;
+    }
+    
+    .name_box{
+        justify-content: center;
+        align-items: center;
+     font-size: 60%;
+        margin: auto 0%;
+        line-height: 90%;
+        width: 50%;
+        
+    }
+    
+    .watch_box{
+        display: flex;
+        width: 30%;
+    
+    
+    }
+    
+    .fa-clock-o{
+     
+        color: rgba(255, 204, 0, 0.782);
+        margin: 10% 1% 10% 10% ;
+        
+    }
+    
+    .clock{
+        font-size: 44%;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+       margin: 10% 10% 10% 0% ;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    .top_nav{
+        
+        color: aliceblue;
+        width: 100%;
+        background-color: rgb(238, 57, 7);
+        display: flex;
+
+    }
+
+    .cnt_links{
+        display: flex;
+        width: 30%;
+    }
+
+   
+.fa-phone{
+    margin: 0.8% 2% auto 10%;
+    height: 100%;
+   
+    color: antiquewhite;
+}
+
+.fa-envelope{
+    margin: 0.8% 2% auto 5%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+.check_links{
+ 
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.num{
+    
+    margin: auto 2% auto 1%;
+    height: 100%;
+    display: none;
+    color: antiquewhite;
+}
+ /* click links ko lagi codding   */ 
+.check_links{
+    text-align: right;
+    }
+    
+    .NEWS{
+        margin-left: 6vw;
+       text-align: right;
+        width: 7%;
+        padding-right: 13%;
+        font-size: 50%;
+        
+       
+    }
+    
+    
+    
+    .RESULT{
+        margin-left: 5%;
+        margin-right: 3%;
+        width: 10%;
+        font-size: 50%;
+       
+    }
+    
+    .parent{
+        margin:  auto 2%;
+        width: 10%;
+        color: blue;
+       background-color: yellow;
+       text-align: center;
+       font-size: 50%;
+    }
+    
+
+     /* heading responisve*/
+     .logo_box{
+
+        width: 6%;
+        height: 12%;
+        
+    }
+    
+    #log{
+        margin-left: 6%;
+        width: 63%;
+        height: auto;
+    }
+    
+    .name_box{
+        justify-content: center;
+        align-items: center;
+     font-size: 50%;
+        margin: auto 1%;
+        line-height: 50%;
+        width: 50%;
+    }
+    
+    .watch_box{
+        display: flex;
+        width: 30%;
+    
+    
+    }
+    
+    .fa-clock-o{
+     
+        color: rgba(255, 204, 0, 0.782);
+        margin: 10% 1% 10% 10% ;
+        
+    }
+    
+    .clock{
+        font-size: 38%;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+       margin: 10% 10% 10% 0% ;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 400px){
+    .top_nav{
+        
+        color: aliceblue;
+        width: 100%;
+        background-color: rgb(238, 57, 7);
+        display: flex;
+
+    }
+
+    .cnt_links{
+        display: flex;
+        width: 20%;
+    }
+
+   
+.fa-phone{
+    margin: 0.8% 2% auto 10%;
+    height: 100%;
+   
+    color: antiquewhite;
+}
+
+.fa-envelope{
+    margin: 0.8% 2% auto 5%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+.check_links{
+ 
+    width: 80%;
+    display: flex;
+    
+  
+}
+
+.num{
+    
+    margin: auto 3% auto 1.5%;
+    height: 100%;
+    display: none;
+    color: antiquewhite;
+}
+ /* click links ko lagi codding   */ 
+.check_links{
+    text-align: right;
+    }
+    
+    .NEWS{
+        margin-left: 10vw;
+       text-align: right;
+        width: 7%;
+        padding-right: 2%;
+        font-size: 50%;
+        
+       
+    }
+    
+    
+    
+    .RESULT{
+        margin-left: 25%;
+        margin-right: 13%;
+        width: 10%;
+        font-size: 50%;
+       
+    }
+    
+    .parent{
+        margin:  auto 2%;
+        width: 10%;
+        color: blue;
+       background-color: yellow;
+       text-align: center;
+       font-size: 50%;
+    }
+    
+
+     /* heading responisve*/
+     .logo_box{
+
+        width: 6%;
+        height: 12%;
+        
+    }
+    
+    #log{
+        margin-left: 6%;
+        width: 63%;
+        height: auto;
+    }
+    
+    .name_box{
+        justify-content: center;
+        align-items: center;
+     font-size: 30%;
+        margin: auto 1%;
+        line-height: 30%;
+        width: 60%;
+    }
+    
+    .watch_box{
+        display: flex;
+        width: 30%;
+    
+    
+    }
+    
+    .fa-clock-o{
+     
+        color: rgba(255, 204, 0, 0.782);
+        margin: 2% 1% 10% 10% ;
+        
+    }
+    
+    .clock{
+        font-size: 22%;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+       margin: 10% 10% 10% 0% ;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+    .top_nav{
+        
+        color: aliceblue;
+        width: 100%;
+        background-color: rgb(238, 57, 7);
+        display: flex;
+
+    }
+
+    .cnt_links{
+        display: flex;
+        width: 20%;
+    }
+
+   
+.fa-phone{
+    margin: 0.8% 2% auto 10%;
+    height: 100%;
+   
+    color: antiquewhite;
+}
+
+.fa-envelope{
+    margin: 0.8% 2% auto 5%;
+    height: 100%;
+    color: antiquewhite;
+}
+
+.check_links{
+ background-color: aqua;
+    width: 80%;
+    display: flex;
+    
+  
+}
+
+.num{
+    
+    margin: auto 3% auto 1.5%;
+    height: 100%;
+    display: none;
+    color: antiquewhite;
+}
+ /* click links ko lagi codding   */ 
+.check_links{
+    text-align: right;
+    }
+    
+    .NEWS{
+        margin-left: 10vw;
+       text-align: right;
+        width: 7%;
+        padding-right: 2%;
+        font-size: 50%;
+        
+       
+    }
+    
+    
+    
+    .RESULT{
+        margin-left: 25%;
+        margin-right: 13%;
+        width: 10%;
+        font-size: 50%;
+       
+    }
+    
+    .parent{
+        margin:  auto 2%;
+        width: 10%;
+        color: blue;
+       background-color: yellow;
+       text-align: center;
+       font-size: 50%;
+    }
+    
+
+     /* heading responisve*/
+     .logo_box{
+
+        width: 6%;
+        height: 12%;
+        
+    }
+    
+    #log{
+        margin-left: 6%;
+        width: 63%;
+        height: auto;
+    }
+    
+    .name_box{
+        justify-content: center;
+        align-items: center;
+     font-size: 30%;
+        margin: auto 1%;
+        line-height: 30%;
+        width: 60%;
+    }
+    
+    .watch_box{
+        display: flex;
+        width: 30%;
+    
+    
+    }
+    
+    .fa-clock-o{
+     
+        color: rgba(255, 204, 0, 0.782);
+        margin: 2% 1% 10% 10% ;
+        
+    }
+    
+    .clock{
+        font-size: 22%;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+       margin: 10% 10% 10% 0% ;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* header ko lagi code gadaixu hai */
+.header{
+   display:flex;
+}
+
+.logo_box{
+
+    width: 10%;
+    height: 10%;
+    padding: 0.8% 0.2% 0.% 0.5%;
+    margin-right: 1%;
+}
+
+#log{
+    margin-left: 10%;
+    width: 100%;
+   height: 100%;
+ 
+}
+
+.name_box{
+    justify-content: center;
+    align-items: center;
+ 
+    margin: auto 0%;
+    line-height: 30%;
+    width: 50%;
+}
+
+.watch_box{
+    display: flex;
+    width: 30%;
+
+
+}
+
+.fa-clock-o{
+ 
+    color: rgba(255, 204, 0, 0.782);
+    margin: 14% 1% 10% 10% ;
+    
+}
+
+.clock{
+    
+    
+    width: 80%;
+    height: auto;
+   margin: 12% 10% 10% 0% ;
+    justify-content: center;
+    align-items: center;
+}

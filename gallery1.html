@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="nnav.css">
+  <link rel="stylesheet" href="gallery_style.css">
+  <link rel="stylesheet" href="hdr.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top_nav">
+        <div class="cnt_links">
+            <i class="fa fa-phone" class="call_icon"></i>
+            <p class="num">9812071109</p>
+             <i class="fa fa-envelope"></i>
+            <p class="num">singhvaisikindra@gmail.com</p>
+        </div>
+        <div class="check_links">
+            <p class="NEWS">NEWS&EVENT</p>
+        <p class="RESULT">RESULT</p>
+        <p class="parent">par</p>
+        </div>
+    </div>
+        <!--लोगो आ हेडिङ सब के कोडिङ -->
+    <div class="header">
+        <div class="logo_boxp">
+            <img id="log" src="R.png">
+        </div>
+        <div class="name_box">
+            <div class="name"><h3 id="nname">श्रि राष्ट्रिय माध्यमिक बिद्यालय पशुपतिनाग‍थ बनरझुल्ला </h3> <br> बर्दिबास नगरपालिका :- ९ ,महोत्तरी</div>
+        </div>
+        <div class="watch_box">
+            <i class="fa fa-clock-o"></i>
+            <p class="clock">Sun-Fri 09:00 - 04:00<br> Saturday Closed</p>
+        </div>
+    </div>
+    
+       
+     <!--लिस्ट  सब के कोडिङ -->
+     <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars" id="i"></i></label>
+        <div class="content">
+     
+          <ul class="links">
+            <li><a href="project.html">Home</a></li>
+            
+            <li>
+              <a href="#" class="desktop-link">About</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">About</label>
+              <ul>
+                <li><a href="scl.HTML">our School</a></li>
+              
+                <li><a href="ABOUT.HTML">meaasage from principal</a></li>
+                <li><a href="chair.html">meaasage from Chairman 3</a></li>
+                <li><a href="teacher.html">Our Teacher Tim</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-link">Program</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Program</label>
+              <ul>
+                <li>
+                  <a href="#" class="desktop-link">Computer Engineering</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">Computer Engineering</label>
+                  <ul>
+                    <li><a href="pre-deploma.html">Pre-diploma (18 months)</a></li>
+                   
+               
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="desktop-link">+2(xi & xii)</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">+2(xi & xii)</label>
+                  <ul>
+                    <li><a href="commerce.html">Management</a></li>
+                    <li><a href="education.html">Education</a></li>
+               
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="gallery_style.css">Gallery</a></li>
+    
+            <li><a href="cont.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" value="Type Something to Search..." required>
+          <button type="submit" class="go-icon" placeholder="OK">ok</button>
+        </form>
+      </nav>
+    </div>
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+ 
+    <img src="https://www.w3docs.com/uploads/media/default/0001/03/66cf5094908491e69d8187bcf934050a4800b37f.jpeg" style="width:100%">
+    
+    <div class="text">Sikindra Singh</div>
+  </div>
+  <div class="mySlides fade">
+   
+    <img src="https://www.w3docs.com/uploads/media/default/0001/03/b7d624354d5fa22e38b0ab1f9b905fb08ccc6a05.jpeg" style="width:100%">
+    <div class="text">Suvash Shah</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+    <div class="text">Sunil Yadav</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div height="0.01px"style="text-align:center; display:none; " >
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+<script>
+  let slideIndex = 0;
+  let timeoutId = null;
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  
+  showSlides();
+  function currentSlide(index) {
+       slideIndex = index;
+       showSlides();
+  }
+ function plusSlides(step) {
+    
+    if(step < 0) {
+        slideIndex -= 2;
+        
+        if(slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+    }
+    
+    showSlides();
+ }
+  function showSlides() {
+    for(let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dots[i].classList.remove('active');
+    }
+    slideIndex++;
+    if(slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add('active');
+     if(timeoutId) {
+        clearTimeout(timeoutId);
+     }
+    timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+</script>
+    
+
+
+
+
+
+    <div class="wrapperz">
+        <h1 class="section-header">Gallery</h1>
+        <div class="main-content">
+            <div class="box">
+                <img src="a.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="walpaper.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Photoshop</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+              <img src="a.jpg" alt="">
+              <div class="img-text">
+                  <div class="content">
+                      <h2>ui/ux design</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="box">
+              <img src="walpaper.png" alt="">
+              <div class="img-text">
+                  <div class="content">
+                      <h2>Photography</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="box">
+            <img src="a.jpg" alt="">
+            <div class="img-text">
+                <div class="content">
+                    <h2>ui/ux design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="walpaper.png" alt="">
+            <div class="img-text">
+                <div class="content">
+                    <h2>Photography</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                </div>
+            </div>
+        </div>
+            <div class="box">
+                <img src="a.jpg" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>crafting</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="walpaper.png" alt="">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--gallery slide1 -->
+<div class="slide-box1">
+  <div class="image-slideshow">
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 1</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 2</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 3</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+  </div>
+  <div class="image-slideshow">
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 1</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 2</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 3</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+  </div>
+ </div>
+
+
+
+ <div class="wrapperz">
+  <h1 class="section-header">Gallery</h1>
+  <div class="main-content">
+      <div class="box">
+          <img src="a.jpg" alt="">
+          <div class="img-text">
+              <div class="content">
+                  <h2>Web Design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+              </div>
+          </div>
+      </div>
+      <div class="box">
+          <img src="walpaper.png" alt="">
+          <div class="img-text">
+              <div class="content">
+                  <h2>Photoshop</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+              </div>
+          </div>
+      </div>
+      <div class="box">
+        <img src="a.jpg" alt="">
+        <div class="img-text">
+            <div class="content">
+                <h2>ui/ux design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="walpaper.png" alt="">
+        <div class="img-text">
+            <div class="content">
+                <h2>Photography</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+      <img src="a.jpg" alt="">
+      <div class="img-text">
+          <div class="content">
+              <h2>ui/ux design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="box">
+      <img src="walpaper.png" alt="">
+      <div class="img-text">
+          <div class="content">
+              <h2>Photography</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+          </div>
+      </div>
+  </div>
+      <div class="box">
+          <img src="a.jpg" alt="">
+          <div class="img-text">
+              <div class="content">
+                  <h2>crafting</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+              </div>
+          </div>
+      </div>
+      <div class="box">
+          <img src="walpaper.png" alt="">
+          <div class="img-text">
+              <div class="content">
+                  <h2>Marketing</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!--gallery slide1 -->
+<div class="slide-box1">
+  <div class="image-slideshow">
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 1</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 2</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 3</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+  </div>
+  <div class="image-slideshow">
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 1</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 2</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+      <div>
+          <img src="a.jpg" width="600" height="300" alt="">
+          <div>
+              <h2>Example Photo 3</h2>
+              <p>Example description for the photo...</p>
+          </div>
+      </div>
+  </div>
+ </div>
+
+
+
+ <!-- code for fotter-->
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+      <h3 class="aabout">About<span>बनरझुल्ला</span></h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">History</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">© 2019 श्रि राष्ट्रिय माध्यमिक बिद्यालय पशुपतिनाग‍थ बनरझुल्ला <br> Sikindra singh <br> Suvash shah  <br> Binita  singh <br> ranjana singh  <br> Biond singh</p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>  Madhesh Provience,
+               Mahottari</span>
+              Bardibas Municipality -9, Pashupatinagar - 2</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+977 9812071109</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">singhvaisikindra@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About My School</span>
+          We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+      <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>

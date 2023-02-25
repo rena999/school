@@ -1,0 +1,145 @@
+<doctype html>
+<html>
+<head> <title> login form </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#login").click(function(){
+ alert("You are login sucessfully");
+  });
+
+  $("#login").click(function(){
+ $(".form").hide();
+  });
+  
+  
+  
+
+  $("#login").click(function(){
+$(".form").hide();
+  });
+});
+</script>
+</script>
+<style>
+body{
+margin:10px;
+padding:0px;
+background:url("s.jpg");
+}
+
+
+
+.form{
+border: 0px solid silver;
+  border-radius:  20px;
+border-redius:10px ;
+background-color:white;
+padding:20px;
+margin:130px 300px;
+width:50%;
+}
+
+
+
+.click{
+border:2px;
+border: 2px solid silver;
+  border-radius: 20px;
+padding:0px 20px 3px 30px;
+margin:10px 2px 2px 50px;
+font-size:15px;}
+
+
+
+.form{
+
+height:50vh;
+width:40vw;}
+
+
+
+
+
+#username{
+outline:none;
+border: 1px solid silver;
+  border-radius:  7px;
+width:100%;
+height:35px;
+font-size:15px;
+margin-top: 2px;
+
+}
+
+#password{
+outline:none;
+border: 1px solid silver;
+  border-radius:  7px;
+margin: 10px 0px;
+width:100%;
+height:35px;
+font-size:15px;}
+
+
+#login{
+outline:none;
+border: 2px solid silver;
+  border-radius:  10px;
+color:white;
+border:0px;
+background-color:blue;
+text-align:center;
+width:100%;
+height:35px;
+font-size:15px;}
+
+
+.forget{
+  border-radius:  10px;
+color:blue;
+text-size:19px;
+text-align:center;
+width:100%;
+height:35px;
+font-size:15px;}
+
+.new{
+
+  border-radius:  10px;
+color:white;
+text-align:center;
+background-color:rgb(236, 8, 95);
+margin: 3% 22%;
+padding:10px;
+width:50%;
+height:25px;
+font-size:15px;}
+
+.b{
+    background-image:url(a.jpg);
+    position: relative;
+   background-size: COVER;
+}
+
+.head{
+    text-align: center;
+    font-style: bold;
+    font-size: 20px;
+    margin:1% 0%;
+}
+</style>
+</head>
+
+<body class="b">
+<div class="form"  action="svs.php" method="GET">
+    <p class="head">Login</p>
+<input type="text" name="name" placeholder="Email Or Phone Number" id="username"> <br>
+<input type="password" name="password" placeholder="Password" id="password">
+<INPUT type="SUBMIT" value="Log in" id="login">
+<p class="forget"> Forgot Password? </p>
+<hr color="silver">
+<p class="new">Allready You Have An Account? <a href="singh.html">SignIn</a> </p>
+ </div>
+</body>
+</html>

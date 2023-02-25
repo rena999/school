@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Style sheet -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="hdr.css">
+     <link rel="stylesheet" href="cont.css">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+     <!-- FOnt Awesome -->
+     <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="y.css">
+    <style>
+
+      /*nav new */
+    
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
+.wrapper{
+  background-color: rgba(123, 27, 27, 0.8);
+
+  width: 100%;
+}
+.wrapper nav{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  backमround-color: rgba(123, 27, 27, 0.8);
+  margin: 0 auto;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  background-color:rgba(123, 27, 27, 0.8); ;
+  position: absolute;
+  height: 100%;
+  max-width: calc(90% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background-color: rgba(123, 27, 27, 0.8);
+  padding: 0 10px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+  width: 20px;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  height:50px ;
+  transform: translateY(-50%);
+  line-height: 40px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  outline: none;
+  color: rgb(245, 245, 245);
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+#search{
+
+  margin-left: 30px;
+ 
+}
+
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+background-color: rgba(0,0,0,0.4);
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  
+}
+.content .links li:hover > ul{
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 10%;
+    top: 40.2%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  
+  .wrapper .search-box{
+    max-width: calc(100% - 40px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+
+.dummy-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.dummy-text h2{
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+
+
+       /*nav new */
+      * {
+        box-sizing: border-box
+      }
+     
+      .mySlides {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+        height: 66vh;
+        width: 1000px;
+      }
+      .slideshow-container {
+        max-width: 10000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+     
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 1px;
+        width: 15px;
+        margin: -100px  2px 0px 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+
+      /* cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc*/
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.sectionn{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.containerer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-sectionn{
+	float: left;
+	width: 55%;
+}
+.image-sectionn{
+	float: right;
+	width: 40%;
+}
+
+
+.image-sectionn img{
+	width: 100%;
+	height: auto;
+}
+.content-sectionn .titlee{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-sectionn .contentt h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-sectionn .contentt p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-sectionn .contentt .buttonn{
+	margin-top: 30px;
+}
+.content-sectionn .contentt .buttonn a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-sectionn .contentt .buttonn a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-sectionn .sociall{
+	margin: 40px 40px;
+}
+.content-sectionn .sociall i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-sectionn .sociall i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.containerer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-sectionn{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-sectionn{
+	float:none;
+	width:100%;
+	
+}
+.image-sectionn img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-sectionn .titlee{
+	text-align: center;
+	font-size: 19px;
+}
+.content-sectionn .contentt .buttonn{
+	text-align: center;
+}
+.content-sectionn .contentt .buttonn a{
+	padding:9px 30px;
+}
+.content-sectionn .sociall{
+	text-align: center;
+}
+
+}
+/*ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd*/
+.content-sectionnn{
+  float: right;
+	
+	width: 55%;
+}
+.image-sectionnn{
+	float: left;
+	width: 40%;
+}
+
+.image-sectionnn img{
+	width: 100%;
+	height: auto;
+}
+.content-sectionnn .titlee{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-sectionnn .contentt h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-sectionnn .contentt p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-sectionnn .contentt .buttonn{
+	margin-top: 30px;
+}
+.content-sectionnn .contentt .buttonn a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-sectionnn .contentt .buttonn a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-sectionnn .sociall{
+	margin: 40px 40px;
+}
+.content-sectionnn .sociall i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-sectionnn .sociall i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.containerer{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-sectionnn{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-sectionnn{
+	float:none;
+	width:100%;
+	
+}
+.image-sectionnn img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-sectionnn .titlee{
+	text-align: center;
+	font-size: 19px;
+}
+.content-sectionnn .contentt .buttonn{
+	text-align: center;
+}
+.content-sectionnn .contentt .buttonn a{
+	padding:9px 30px;
+}
+.content-sectionnn .sociall{
+	text-align: center;
+}
+
+}
+
+
+
+
+
+.uli{
+  list-style-type: star;
+}
+
+/*gallery slide 1*/
+
+
+.image-slideshow {
+  background-size:contain;
+    overflow: hidden;
+	width: 600px;
+    height: 300px;
+   margin: 100px;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+    align-items: center;
+    margin: 20px;
+}
+.image-slideshow > div {
+	width: 600px;
+    height: 300px;
+	animation: move 15s ease-in-out 2s infinite alternate;
+    display:inline-block;
+}
+.image-slideshow > div div {
+	position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+}
+.image-slideshow h2 {
+	padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+.image-slideshow p {
+	padding: 0 15px 15px 15px;
+    margin: 0;
+    font-size: 14px;
+    color: #dddddd;
+}
+@keyframes move {
+	0%,30% { transform: translateX(0); }
+   	40%,70% { transform: translateX(-600px); }
+   	80%,100% { transform: translateX(-1200px); }
+}
+
+.slide-box1{
+  justify-content: center;
+    display: flex;
+   
+}
+
+body{
+  margin: 0;padding: 0;
+}
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="top_nav">
+    <div class="cnt_links">
+        <i class="fa fa-phone" class="call_icon"></i>
+        <p class="num">9812071109</p>
+         <i class="fa fa-envelope"></i>
+        <p class="num">singhvaisikindra@gmail.com</p>
+    </div>
+    <div class="check_links">
+        <p class="NEWS">NEWS&EVENT</p>
+    <p class="RESULT"><A href="http://localhost/StudentResult/index.php" >RESULT</A></p>
+    <p class="parent"><A href="AD.HTML" >ADMISSION</A></p>
+    </div>
+</div>
+    <!--लोगो आ हेडिङ सब के कोडिङ -->
+<div class="header">
+    <div class="logo_box">
+        <div   ><img id="log" src="R.png"></div>
+    </div>
+    <div class="name_box">
+        <div class="name"><h3 id="nname">श्री राष्ट्रिय माध्यमिक बिद्यालय पशुपतिनाथ बनरझुल्ला </h3> <br> बर्दिबास नगरपालिका :- ९ ,महोत्तरी</div>
+    </div>
+    <div class="watch_box">
+      <div class="clck"><i class="fa fa-clock-o" id="clock"></i></div>
+        
+        <p class="clock">Sun-Fri 09:00 - 04:00<br> Saturday Closed</p>
+    </div>
+</div>
+
+   
+ <!--लिस्ट  सब के कोडिङ -->
+ <div class="wrapper">
+  <nav>
+    <input type="checkbox" id="show-search">
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon"><i class="fas fa-bars" id="i"></i></label>
+    <div class="content">
+ 
+      <ul class="links">
+        <li><a href="project.html">Home</a></li>
+        
+        <li>
+          <a href="#" class="desktop-link">About</a>
+          <input type="checkbox" id="show-features">
+          <label for="show-features">About</label>
+          <ul>
+            <li><a href="scl.HTML">our School</a></li>
+          
+            <li><a href="chair.html">meaasage from principal</a></li>
+            <li><a href="chairman.html">meaasage from Chairman 3</a></li>
+            <li><a href="teacher.html">Our Teacher Tim</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-link">Program</a>
+          <input type="checkbox" id="show-services">
+          <label for="show-services">Program</label>
+          <ul>
+            <li>
+              <a href="pre-deploma.html" class="desktop-link">Pre-diploma (18 months)</a>
+              
+            </li>
+            <li>
+              <a href="#" class="desktop-link">+2(xi & xii)</a>
+              <input type="checkbox" id="show-items">
+              <label for="show-items">+2(xi & xii)</label>
+              <ul>
+                <li><a href="commerce.html">Management</a></li>
+                <li><a href="education.html">Education</a></li>
+           
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="cont.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <label for="show-search" class="search-icon"><i class="fas fa-user-alt"></i></label>
+   
+  </nav>
+</div>
+
+<!--
+ <div class="list">
+    <ul>
+        <li><a href="project.html" >HOME</a></li>
+        <li><a href="ABOUT.HTML" >ABOUT US</a></li>
+        <li>AIMS AND OBJECTIVES</li>
+        <li>HISTORY</li>
+        <li>GALLERY</li>
+        <li><a href="#" >CONTACT US</a></li>
+        <li CLASS="src">
+          <div class="containera">
+            <input placeholder='Search...' class='js-search-a' type="text">
+            <i class="fa fa-search"></i>
+          </div>
+          
+        </li>
+    </ul>
+ </div>
+ -->
+ <div class="body">
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Mahottari, 4578</div>
+          <div class="text-two">Bardibas - 9 </div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+977 9807651029</div>
+          <div class="text-two">+977 9812071109</div>
+        </div>
+
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          
+          <div class="topic">Email</div>
+          <div class="text-one">svstesch120@gmail.com</div>
+          <div class="text-two">singhvaisikindra@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <input type='textarea' placeholder="message">
+          
+        </div>
+        
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+   </div>
+<!-- Codding for Down of notices slide end -->
+<div class="containerr">
+  <div class="section-title">
+      <h1>Our Executive Program </h1>
+  </div>
+
+  <div class="row">
+
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                <h3>Dipendra Singh</h3>
+                <h4>Art Director</h4>
+                <p>Some text goes here that describes about team members</p>
+                <h6>singhvaisikindra@gmail.com</h6>
+            </div>
+            <div class="team-social">
+              <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+              <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+              <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+           
+          </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h3>Dipendra Singh</h3>
+                  <h4>Art Director</h4>
+                  <p>Some text goes here that describes about team members</p>
+                  <h6>singhvaisikindra@gmail.com</h6>
+              </div>
+              <div class="team-social">
+                <a href="https://wa.me/9812071109" class="social-tw"> <i class="fa fa-facebook"></i></a>
+                <a href="tel:+9779807651029" class="social-fb"> <i class="fa fa-envelope"></i></a>
+                <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+                <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+             
+            </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                <h3>Dipendra Singh</h3>
+                <h4>Art Director</h4>
+                <p>Some text goes here that describes about team members</p>
+                <h6>singhvaisikindra@gmail.com</h6>
+            </div>
+            <div class="team-social">
+              <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+              <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+              <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+           
+          </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                <h3>Dipendra Singh</h3>
+                <h4>Art Director</h4>
+                <p>Some text goes here that describes about team members</p>
+                <h6>singhvaisikindra@gmail.com</h6>
+            </div>
+            <div class="team-social">
+              <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+              <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+              <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+           
+          </div>
+          </div>
+      </div>
+
+  </div>
+
+</div>
+
+<div class="containerr" id="ab">
+  <div class="section-title">
+      <h1>Our Executive team </h1>
+  </div>
+
+  <div class="row">
+
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                <h3>Dipendra Singh</h3>
+                <h4>Art Director</h4>
+                <p>Some text goes here that describes about team members</p>
+                <h6>singhvaisikindra@gmail.com</h6>
+            </div>
+            <div class="team-social">
+              <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+              <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+              <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+           
+          </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h3>Dipendra Singh</h3>
+                  <h4>Art Director</h4>
+                  <p>Some text goes here that describes about team members</p>
+                  <h6>singhvaisikindra@gmail.com</h6>
+              </div>
+              <div class="team-social">
+                <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+                <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+                <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+             
+            </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                <h3>Dipendra Singh</h3>
+                <h4>Art Director</h4>
+                <p>Some text goes here that describes about team members</p>
+                <h6>singhvaisikindra@gmail.com</h6>
+            </div>
+            <div class="team-social">
+              <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+              <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+              <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+              <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+           
+          </div>
+          </div>
+      </div>
+
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="img/a.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                <h3>Dipendra Singh</h3>
+                <h4>Art Director</h4>
+                <p>Some text goes here that describes about team members</p>
+                <h6>singhvaisikindra@gmail.com</h6>
+            </div>
+              <div class="team-social">
+                  <a href="#" class="social-tw"> <i class="fa fa-facebook"></i></a>
+                  <a href="#" class="social-fb"> <i class="fa fa-envelope"></i></a>
+                  <a href="#" class="social-li"> <i class="fab fa-facebook-messenger"></i></a>
+                  <a href="#" class="social-in"> <i class="fa fa-whatsapp"></i></a>
+               
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+</div>
+<!--about us message-->
+
+<!-- code for fotter-->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3 class="aabout">About<span>बनरझुल्ला</span></h3>
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            |
+            <a href="#">History</a>
+            |
+            <a href="#">About</a>
+            |
+            <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2023 श्रि राष्ट्रिय माध्यमिक बिद्यालय पशुपतिनाग‍थ बनरझुल्ला <br> Sikindra singh <br> Suvash shah  <br> Binita  singh <br> ranjana singh  <br> Biond singh</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>  Madhesh Provience,
+                 Mahottari</span>
+                Bardibas Municipality -9, Pashupatinagar - 2</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+977 9812071109</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@eduonix.com">singhvaisikindra@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About My School</span>
+            We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+          <a href="#"><i class="fa fa-envelope"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-phone"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
